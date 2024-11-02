@@ -98,8 +98,6 @@ def sendOnePing(mySocket, destAddr, ID):
 
 def doOnePing(destAddr, timeout):
     icmp = socket.getprotobyname("icmp")
-    # SOCK_RAW is a powerful socket type. For more details see: http://sock-raw.org/papers/sock_raw
-
     # TODO
     # Create Socket here
     mySocket = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp)
